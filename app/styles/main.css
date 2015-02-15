@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'Lora';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Lora-Regular.ttf')  format('truetype');
+}
+
+::selection {
+  background: #196784;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #232525;
+  color: #FFFFFF;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#app {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  padding-top: 70px;
+  overflow: scroll;
+}
+
+.syntaxarea {
+  width: 600px;
+  margin: 0 auto;
+}
+
+#app .syntaxarea .output {
+  color: white;
+  font-family: 'Lora';
+}
+
+#app .syntaxarea .input {
+  font-family: 'Lora';
+}
+
+#app .syntaxarea .output, #app .syntaxarea .input {
+  padding-bottom: 100px;
+  letter-spacing: 0.05em;
+}
+
+.caret {
+  margin-left: -2px;
+}
+
+#app .caret.hidden {
+  -webkit-animation: none !important;
+}
