@@ -1,15 +1,7 @@
 var React = require('react'),
-    Syntaxarea = require('react-syntaxarea');
+    CodeMirror = require('react-code-mirror');
 
-var rules = {
-  heading: /(#+)(.*)/,
-  link: /\[([^\[]+)\]\(([^\)]+)\)/,
-  bold: /(\*\*|__)(.*?)\1/,
-  emphasis: /(\*|_)(.*?)\1/,
-  list: /\n\*(.*)/,
-  whitespace: /\s+/,
-  other: /\S+/
-}
+require('codemirror/mode/markdown/markdown');
 
 var App = React.createClass({
 
@@ -17,7 +9,12 @@ var App = React.createClass({
 
   render: function() {
     return (
-      <Syntaxarea rules={rules} />
+      <CodeMirror className='editor'
+                  mode='markdown'
+                  theme='hazza'
+                  autoFocus={true}
+                  lineWrapping={true}
+                  lineNumbers={false} />
     );
   }
 

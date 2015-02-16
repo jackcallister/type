@@ -4,8 +4,9 @@
   "main": "main.js",
   "author": "Jack Callister",
   "dependencies": {
+    "codemirror": "^4.12.0",
     "react": "^0.12.0",
-    "react-syntaxarea": "0.0.21"
+    "react-code-mirror": "^3.0.3"
   },
   "devDependencies": {
     "jsx-loader": "^0.12.1"
